@@ -4,7 +4,7 @@ pipeline{
         stage("Deploy Dev"){
             when {
                 // This works only in multi branch pipeline
-                branch 'development'
+                branch 'develop'
             }
             steps{
                 echo "Deploying to Dev environment"
